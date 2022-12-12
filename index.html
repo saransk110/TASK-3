@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume in JSON formate</title>
+</head>
+<body>
+   <b><h1>Resume</h1></b>
+     <b><h2> Personal Details</h2></b>
+    <script>
+       var str ='{"name":"Sarathkumar.N","age":"26","dateofbirth":"01.04.1996","sex":"Male","MaritalStatus":"Single","Address":"No.37 Srinivasa perumal kovil St Chennai-68"}'
+       var o=JSON.parse(str);
+        document.write("<br>Name:" +  o.name);
+        document.write("<br>Age:"+    o.age);
+        document.write("<br>Dob:"+     o.dateofbirth);
+        document.write("<br>Sex:"+o.sex);
+        document.write("<br>Matital status:"+o.MaritalStatus);
+        document.write("<br>Address:"+o.Address);
+     </script>      
+</body>
+<body>
+    <h3>Educational Qualification</h3>
+    <script>
+        var add='{"chem":"M.sc Chemistry (2017-2019)=>65%","chem1":"B.sc Chemistry (2014-2017)=>70%"}' 
+     var a=JSON.parse(add);
+          document.write("<br>Guru Nanak College:"+a["chem"]);
+          document.write("<br>RKMV College:"+a["chem1"]);
+    </script>
+</body>
+</html>
